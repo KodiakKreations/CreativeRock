@@ -1,7 +1,10 @@
 // @import url('https://fonts.googleapis.com/css?family=Hind:400,500|Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Bangers|Hind:400,500|Indie+Flower');
 
-
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
 
 h1 {
     font-family: 'Bangers', cursive;
@@ -117,6 +120,10 @@ nav.mainNavigation {
             }
         }
     }
+            
+    a.icon {
+        display: none;
+    }
 }
 
 
@@ -125,7 +132,7 @@ nav.mainNavigation {
     min-height: 630px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -250px;
+    // background-position-y: -250px;
     box-shadow: 0px 6px 15px #b5b5b5;
 
     div#bannerTitle {
@@ -170,12 +177,12 @@ nav.mainNavigation {
         padding: 50px 30px;
 
         p {
-            padding: 0 30px;
-            min-height: 110px;
+            padding: 20px 30px;
+            min-height: 256px;
         }
         
         .btn {
-            width: 50%;
+            width: 60%;
             margin: 0 auto;
         }
         
@@ -316,5 +323,203 @@ footer {
                 padding: 5px 0;
             }
         }
+    }
+}
+
+
+
+
+
+// Mobile Styles begin here
+
+@media(max-width:1199px) {
+
+    nav.mainNavigation ul.navigation li a {
+        font-size: 20px;
+    }
+    
+    .pageLinks .square p {
+        padding: 20px 40px;
+        min-height: 146px;
+    }
+
+    form#requestQuote p {
+        font-size: 17px;
+    }
+
+}
+
+
+@media(max-width:991px) {
+    nav.mainNavigation ul.navigation li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+.banner div#bannerTitle h1 span:nth-of-type(1) {
+    left: 60px;
+    top: 80px;
+}
+
+.banner div#bannerTitle h1 span:nth-of-type(2) {
+    font-size: 110px;
+    top: 160px;
+    left: 210px;
+}
+
+.banner {
+        /* background-position-x: -140px; */
+        min-height: 470px;
+}
+
+.pageLinks .square p {
+    min-height: 160px;
+    padding: 20px 0px 0;
+}
+
+footer nav.footerNav ul.footerNavigation {
+    display: flex;
+    flex-direction: row;
+}
+
+footer nav.footerNav ul.footerNavigation li {
+    width: 25%;
+}
+
+footer div#borders form#requestQuote {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer div#borders {
+    border-top: 2px solid #b5b5b5;
+    border-bottom: 2px solid #b5b5b5;
+    border-left: none;
+    border-right: none;
+}
+
+footer iframe#footerMap {
+    margin: 20px 0 5px;
+}
+
+}
+
+
+@media(max-width:767px) {
+
+    header a#logoLink img {
+        max-width: 80px;
+    }
+
+    header .container .row .col-sm-12 {
+        height: 0;
+    }
+
+
+    nav.mainNavigation {
+        position: relative;    
+        width: 140%;
+        left: -131px;
+        top: -40px;
+
+        ul.navigation {
+            transform: scaleY(0);
+            position: absolute;
+            left: -39px;
+            top: 60px;
+            width: 112%;
+            flex-direction: column;
+            text-align: center;
+            z-index: 99;
+            transition: all 0.5s;
+
+            li {
+                background: #22415f;
+                width: 100%;
+                padding: 0;
+                    
+                a {
+                    color: #ffffff;
+                    letter-spacing: 2px;
+                    width: 100%;
+                    display: block;
+                    padding: 20px 0;
+
+                    &:before, &:after {
+                        display: none;
+                    }
+
+                    &:hover, &:focus {
+                        color: #2f62aa;
+                        text-decoration: none;
+                    }
+                }
+            }
+                
+        }
+        
+        ul.navigation.show {
+            transform: scaleY(1);
+        }
+
+        a.icon {    
+            display: block;
+            float: right;
+            color: #123456;
+            font-size: 40px;
+            position: relative;
+            top: -30px;
+            right: 90px;
+        }
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+    
+    
+    .banner {
+        min-height: 330px;
+    
+        div#bannerTitle h1 {
+            top: 60px;
+        
+            span:nth-of-type(1) {
+                left: 30px;
+                top: 60px;
+            }
+            span:nth-of-type(2) {
+                top: 120px;
+                left: 140px;
+                font-size: 80px;
+            }
+        }
+    }
+
+
+    .pageLinks .square p {
+        min-height: 100px;
+    }
+
+    footer div#sub-footer div#copyright p {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+@media(max-width:576px) {
+    nav.mainNavigation a.icon {
+        right: 120px;
+    }
+    
+    nav.mainNavigation {
+        width: 157%;
     }
 }
