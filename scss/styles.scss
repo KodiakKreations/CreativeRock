@@ -129,9 +129,13 @@ nav.mainNavigation {
 
 .banner {
     background-image: url(../img/banner.jpg);
-    min-height: 630px;
-    background-size: cover;
+    height: 630px;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: cover;
+    // background-repeat: no-repeat;
     // background-position-y: -250px;
     box-shadow: 0px 6px 15px #b5b5b5;
 
@@ -371,10 +375,10 @@ h1 {
     left: 210px;
 }
 
-.banner {
-        /* background-position-x: -140px; */
-        min-height: 470px;
-}
+// .banner {
+//          background-position-x: -140px;
+//         min-height: 470px;
+// }
 
 .pageLinks .square p {
     padding: 20px 0px 0;
@@ -482,7 +486,9 @@ footer iframe#footerMap {
     
     
     .banner {
-        min-height: 330px;
+        height: 420px;
+        background-position-x: -790px;
+        background-position-y: -120px;
     
         div#bannerTitle h1 {
             top: 60px;
@@ -500,8 +506,8 @@ footer iframe#footerMap {
     }
 
 
-    .pageLinks .square p {
-    }
+    // .pageLinks .square p {
+    // }
 
     footer div#sub-footer div#copyright p {
         font-size: 14px;
