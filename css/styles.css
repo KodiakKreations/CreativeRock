@@ -200,7 +200,7 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06111d', endColorstr='#471566',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   padding: 30px 0 0;
-  color: #b5b5b5;
+  color: #fff;
   font-family: 'Hind', sans-serif; }
   footer nav.footerNav {
     position: relative;
@@ -210,7 +210,7 @@ footer {
       footer nav.footerNav ul.footerNavigation li {
         margin: 15px 0; }
         footer nav.footerNav ul.footerNavigation li a {
-          color: #b5b5b5;
+          color: #fff;
           transition: all 0.5s;
           width: 100%;
           display: block;

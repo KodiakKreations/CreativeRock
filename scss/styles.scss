@@ -244,7 +244,7 @@ footer {
     background: linear-gradient(45deg, #06111d 0%,#471566 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06111d', endColorstr='#471566',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     padding: 30px 0 0;
-    color: #b5b5b5;
+    color: #fff;
     font-family: 'Hind', sans-serif;
 
     nav.footerNav {
@@ -258,7 +258,7 @@ footer {
                 margin: 15px 0;
     
                 a {
-                    color: #b5b5b5;
+                    color: #fff;
                     transition: all 0.5s;
                     width: 100%;
                     display: block;
