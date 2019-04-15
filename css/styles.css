@@ -112,7 +112,7 @@ nav.mainNavigation {
         position: absolute;
         top: 100px;
         left: 120px;
-        width: 460px; }
+        width: 230%; }
       .banner div#bannerTitle h1 span:nth-of-type(2) {
         position: absolute;
         top: 210px;
@@ -130,7 +130,8 @@ nav.mainNavigation {
   padding: 50px 30px; }
   .pageLinks .square p {
     padding: 20px 30px;
-    min-height: 256px; }
+    max-height: 256px;
+    height: 100%; }
   .pageLinks .square .btn {
     width: 60%;
     margin: 0 auto; }
@@ -257,8 +258,7 @@ footer {
     font-size: 20px; }
 
   .pageLinks .square p {
-    padding: 20px 40px;
-    min-height: 146px; }
+    padding: 20px 40px; }
 
   form#requestQuote p {
     font-size: 17px; } }
@@ -284,7 +284,6 @@ footer {
     min-height: 470px; }
 
   .pageLinks .square p {
-    min-height: 160px;
     padding: 20px 0px 0; }
 
   footer nav.footerNav ul.footerNavigation {
@@ -368,9 +367,6 @@ footer {
         top: 120px;
         left: 140px;
         font-size: 80px; }
-
-  .pageLinks .square p {
-    min-height: 100px; }
 
   footer div#sub-footer div#copyright p {
     font-size: 14px; } }

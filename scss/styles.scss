@@ -147,7 +147,7 @@ nav.mainNavigation {
                 position: absolute;
                 top: 100px;
                 left: 120px;
-                width: 460px;
+                width: 230%;
             }
 
             span:nth-of-type(2) {
@@ -178,7 +178,8 @@ nav.mainNavigation {
 
         p {
             padding: 20px 30px;
-            min-height: 256px;
+            max-height: 256px;
+            height: 100%;
         }
         
         .btn {
@@ -340,7 +341,6 @@ footer {
     
     .pageLinks .square p {
         padding: 20px 40px;
-        min-height: 146px;
     }
 
     form#requestQuote p {
@@ -377,7 +377,6 @@ h1 {
 }
 
 .pageLinks .square p {
-    min-height: 160px;
     padding: 20px 0px 0;
 }
 
@@ -502,7 +501,6 @@ footer iframe#footerMap {
 
 
     .pageLinks .square p {
-        min-height: 100px;
     }
 
     footer div#sub-footer div#copyright p {
